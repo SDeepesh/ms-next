@@ -1,0 +1,35 @@
+.section__video {
+  .section__video__wrapper {
+    @apply relative h-0 pb-[56.25%] mt-16 mx-0 mb-56;
+
+    @screen xl {
+      @apply pb-[34.25%] mt-0 mx-0 mb-32;
+    }
+
+    .yt-lite {
+      @apply h-[360px] w-full block relative bg-no-repeat bg-center bg-contain;
+
+      .lty-playbtn {
+        background: unset;
+
+        @apply absolute top-0 bottom-0 left-0 right-0 m-auto w-0 h-0 border-0 cursor-pointer;
+
+        &:after {
+          content: '';
+          border-left: 15px solid black;
+          border-bottom: 10px solid transparent;
+          border-top: 10px solid transparent;
+
+          @apply w-0 h-0 absolute opacity-100 ml-0.5;
+        }
+      }
+    }
+  }
+  iframe {
+    @apply absolute inset-0 w-full h-full mx-auto;
+
+    @screen xl {
+      @apply max-w-[650px] max-h-[366px];
+    }
+  }
+}

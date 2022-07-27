@@ -1,0 +1,56 @@
+.pre-footer {
+  border-top: solid 1px;
+  a {
+    @apply text-sm md:text-lg;
+  }
+
+  @apply border-gray-light mt-24;
+
+  .pre-footer-container {
+    @apply flex flex-col justify-center py-16 container;
+
+    @screen md {
+      @apply flex-row;
+    }
+
+    p {
+      @apply m-0 text-sm md:text-lg;
+    }
+
+    .pre-footer__rating {
+      @apply md:flex flex-row items-center text-center md:text-left md:w-[45%];
+
+      .pre-footer__rating__reviews {
+        @apply md:ml-4 md:w-3/5 mt-2;
+
+        @screen md {
+          @apply w-4/5;
+        }
+      }
+    }
+
+    .pre-footer__rating,
+    .pre-footer__regulation {
+      @apply mx-auto;
+
+      span {
+        @apply text-main;
+      }
+    }
+
+    .pre-footer__regulation {
+      @apply md:flex flex-row items-center text-center md:text-left mb-14 md:mb-0 md:w-[55%];
+
+      .SRA-main-div {
+        @apply mr-4;
+
+        .SRA-sub-div {
+
+          .SRA-iframe {
+            @apply max-w-[160px] max-h-[90px] mb-2 md:mb-0;
+          }
+        }
+      }
+    }
+  }
+}

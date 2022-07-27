@@ -1,0 +1,95 @@
+.tactics {
+  @apply container;
+
+  a {
+    @apply text-base md:text-xl;
+  }
+
+  .tactics__top {
+    @apply mt-14 mb-7 md:mb-16;
+
+    .tactics__top__heading {
+      @apply text-[22px] md:text-5xl font-semibold font-sans;
+    }
+
+    p {
+      @apply text-base md:text-xl mt-0;
+    }
+  }
+
+  .tactics__cdf {
+    @apply mt-20 md:mt-28;
+
+    .tactics__cdf__intro {
+      @apply text-center max-w-2xl m-auto;
+
+      h2 {
+        @apply mb-4 text-xl md:text-[28px];
+      }
+
+      p {
+        @apply text-sm md:text-xl;
+      }
+    }
+
+    .cdf {
+      @apply my-10 md:my-14;
+    }
+  }
+
+  .tactics__reviews {
+
+    .tactics__reviews__text {
+      @apply text-center text-sm md:text-xl;
+
+      a {
+        @apply text-sm md:text-xl;
+      }
+    }
+    .tactics_reviews__body {
+      @apply  bg-gray-lighter text-center pt-[70px] mt-14;
+
+      h2 {
+        @apply mt-0 text-xl md:text-4xl;
+      }
+
+      p {
+        @apply max-w-2xl mx-auto mb-14 text-sm md:text-xl;
+      }
+
+      img {
+        @apply w-full max-w-2xl;
+      }
+    }
+  }
+
+  .tactics__accordion {
+    .tactics__accordion__title {
+      @apply bg-gray-lighter p-[18px] md:p-10 mb-1 flex items-center;
+
+      .tactics__accordion__title__text {
+        @apply my-0 ml-3 md:ml-8 text-sm md:text-xl w-full;
+      }
+    }
+
+    .tactics__accordion__body {
+      @apply ml-6 md:ml-16;
+
+      .tactics__accordion__body__title {
+        @apply flex items-center p-3 md:p-6 mb-1;
+
+        p {
+          @apply my-0 ml-3 md:ml-8 text-sm md:text-xl;
+        }
+      }
+
+      .tactics__accordion__body__content {
+        @apply ml-8 md:ml-16 pl-3 md:mr-10;
+
+        p {
+          @apply text-sm md:text-xl;
+        }
+      }
+    }
+  }
+}

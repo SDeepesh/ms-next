@@ -1,0 +1,49 @@
+.team {
+  h1 {
+    @apply text-center;
+  }
+
+  .team__lawyer__banner {
+    @apply w-3/4 mx-auto block;
+  }
+
+  .team__lawyers {
+    @apply flex flex-wrap justify-center items-center;
+
+    .team__lawyer {
+      @apply w-[270px] h-[50rem] mx-20 flex flex-col my-12 justify-between;
+
+      .team__lawyer__portrait {
+        @apply w-64 h-64 self-center bg-cover;
+      }
+
+      .team__lawyer__link {
+        @apply flex items-center  ml-auto;
+
+        a {
+          @apply text-black;
+        }
+
+        svg {
+          transform: rotate(270deg);
+        }
+      }
+
+      h6 {
+        @apply my-0;
+      }
+    }
+  }
+
+  .team__video {
+    @apply container bg-gray text-white my-24;
+
+    .team__video__container {
+      @apply p-12;
+
+      h4 {
+        @apply text-main mt-0;
+      }
+    }
+  }
+}

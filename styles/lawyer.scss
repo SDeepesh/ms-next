@@ -1,0 +1,86 @@
+.lawyer {
+  @apply container;
+
+  h2 {
+    @apply mt-12 md:mt-16 text-xl	md:text-4xl mb-0;
+  }
+
+  h3 {
+    @apply text-xl md:text-4xl;
+  }
+
+  h5 {
+    @apply mb-3 text-lg md:text-[1.75rem];
+  }
+
+  h6 {
+    @apply mb-0;
+  }
+
+  p {
+    @apply mt-0 text-sm md:text-lg;
+  }
+
+  a {
+    @apply text-main text-sm md:text-lg;
+  }
+
+  .section__text {
+    @apply my-16 md:my-20;
+  }
+
+  .section__image {
+    @apply pt-5;
+
+    img {
+      @apply w-[180px] md:w-[450px];
+    }
+  }
+
+  .section__quotes {
+    @apply font-sans text-base md:leading-8 mt-7 md:mt-12	md:text-[1.25rem] max-w-[516px];
+  }
+
+  .lawyer__reviews {
+    @apply font-sans;
+
+    .lawyer__reviews__header {
+      @apply text-center my-20;
+
+      h3 {
+        @apply font-sans;
+      }
+    }
+
+    .lawyer__reviews__single {
+      @apply mb-14;
+
+      .lawyer__reviews__single__header,
+      .lawyer__reviews__single__footer {
+        @apply flex justify-between;
+      }
+
+      .lawyer__reviews__single__header {
+          strong {
+          @apply text-lg md:text-[1.75rem];
+        }
+        small {
+          @apply text-xs md:text-base;
+        }
+      }
+
+      .lawyer__reviews__single__footer {
+        img {
+          @apply h-full;
+        }
+        .lawyer__reviews__single__footer__review-icon {
+          @apply max-h-8;
+        }
+      }
+
+      .lawyer__reviews__single__body {
+        @apply mb-6 text-sm md:text-xl;
+      }
+    }
+  }
+}

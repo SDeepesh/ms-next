@@ -1,0 +1,235 @@
+.homepage {
+  @apply text-center;
+  .homepage__lawyers-banner {
+    @apply pt-20;
+
+    .homepage__lawyers-banner__container {
+      background-image: url('/images/lawyers-banner-no-split.webp');
+      background-size: 100%;
+
+      @apply flex h-[320px] flex-col justify-start items-center bg-bottom bg-no-repeat;
+
+      @screen md {
+        background-image: url('/images/lawyers.webp');
+
+        @apply h-[520px];
+      }
+
+      h1 {
+        @apply mb-0;
+      }
+
+      .homepage__lawyers-banner__cta {
+        @apply mt-36 flex flex-col;
+
+        @screen md {
+          @apply mt-28;
+        }
+
+        a {
+          @apply no-underline;
+        }
+
+        small {
+          @apply text-gray-light mt-4;
+        }
+      }
+    }
+  }
+
+  .homepage__reviews {
+    @apply mt-20 bg-gray-lighter;
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+
+  .homepage__fees-slider {
+    .homepage__fees-slider__card {
+      .homepage__fees-slider__image {
+        @apply w-32 h-28;
+      }
+    }
+  }
+
+  .homepage__fees__container {
+    @apply flex flex-col items-center justify-center py-16;
+
+    .homepage__fees-cards {
+      @apply hidden;
+
+      @screen md {
+        @apply flex flex-row justify-center my-20 w-4/5;
+      }
+
+      .homepage__fee-card {
+        @apply w-1/4 text-center mx-auto flex flex-col items-center justify-between;
+
+        h3 {
+          @apply text-3xl font-sans mb-0;
+        }
+
+        svg {
+          @apply w-1/2 h-1/3;
+        }
+
+        .homepage__fee-card__image {
+          @apply bg-cover w-full h-40;
+        }
+      }
+    }
+  }
+
+  .homepage__representation-process {
+    @apply bg-gray-lighter;
+    .homepage__representation-process__container {
+      @apply flex flex-col items-center justify-between py-16 bg-gray-lighter;
+
+      .homepage__representation-process__flow {
+        @apply flex flex-col items-center my-20;
+
+        @screen md {
+          @apply flex-row w-4/5;
+        }
+
+        .homepage__representation-process__single-arrow {
+          background-image: url('/images/single-arrow.png');
+
+          transform: rotate(90deg);
+          @apply w-8 h-8 bg-no-repeat bg-contain bg-center;
+
+          @screen md {
+            transform: rotate(0deg);
+
+            @apply mb-32;
+          }
+        }
+
+        .homepage__representation-process__double-arrow {
+          background-image: url('/images/double-arrow.png');
+          transform: rotate(90deg);
+
+          @apply w-20 h-32 bg-no-repeat bg-contain bg-center;
+
+          @screen md {
+            transform: rotate(0deg);
+
+            @apply mb-32;
+          }
+        }
+
+        .homepage__representation-process__card {
+          @apply flex-col flex w-52 mx-2 text-center items-center relative;
+        }
+
+        .homepage__representation-fee {
+          @apply flex;
+
+          @screen md {
+            @apply flex-col w-1/3 mb-32;
+          }
+
+          .homepage__representation-fee__card {
+            @apply flex flex-col items-center w-24 mx-4;
+
+            @screen md {
+              @apply flex-row ml-4 my-5 mr-0  w-full text-left my-2;
+
+              p {
+                @apply w-3/4 my-0 ml-8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .homepage__tools {
+    .homepage__tools__award {
+      background-image: url('/images/award.png');
+
+      @apply w-full h-48 bg-contain bg-no-repeat bg-center mt-12;
+
+      @screen md {
+        @apply h-[20rem];
+      }
+    }
+
+    .homepage__tools__container {
+      @apply flex flex-col items-center justify-center pt-2 pb-11 md:py-14 container;
+
+      h2 {
+        @apply mb-0 text-[22px] md:text-5xl;
+      }
+
+      p {
+        @apply text-base md:text-xl;
+
+        > span {
+          @apply text-base md:text-xl text-black md:block;
+        }
+      }
+
+      span {
+        @apply text-main;
+      }
+
+      .homepage__tools__next-icon {
+        @apply md:w-[1.375rem]
+      }
+
+      .homepage__tools__img {
+        @apply bg-contain bg-no-repeat w-full h-[7.5rem] md:h-[16rem] bg-center mt-10 md:mt-20;
+      }
+
+      .homepage__tools__virtual-link , span{
+        @apply md:text-[1.75rem];
+      }
+
+      .homepage__tools__vl {
+        @apply mt-4 md:mt-11 mb-0 md:mb-6;
+
+        p {
+          @apply m-0 text-sm md:text-xl;
+
+          span {
+            @apply text-black text-sm md:text-xl md:block;
+          }
+        }
+      }
+    }
+  }
+
+  .homepage__clients {
+    @apply bg-gray-lighter;
+
+    a {
+      @apply no-underline;
+    }
+
+    .homepage__clients__container {
+      @apply flex flex-col items-center justify-between py-16  h-[60rem] container;
+
+      .homepage__clients__image {
+        @apply bg-contain bg-no-repeat w-full h-[20rem] bg-center;
+      }
+
+      .homepage__clients__about-us,
+      .homepage__clients__contact-us {
+        @apply flex flex-col items-center justify-center;
+      }
+    }
+  }
+
+  .homepage__team {
+    .homepage__team__container {
+      @apply flex flex-col items-center justify-center py-16;
+
+      .homepage__team__slider {
+        @apply w-full;
+      }
+    }
+  }
+}

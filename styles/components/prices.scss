@@ -1,0 +1,39 @@
+.fees__container {
+  @apply flex flex-col items-center justify-center py-6 md:py-16 container;
+
+  h2 {
+    @apply mb-0 md:mb-4;
+  }
+
+  p {
+    @apply text-center mt-0 last:text-sm last:md:text-lg;
+  }
+
+  .fees-cards {
+    @apply mb-6;
+
+    @screen md {
+      @apply flex flex-row justify-center my-20 w-full;
+    }
+
+    .fee-card {
+      @apply md:w-1/4 text-center mx-auto flex flex-col items-center justify-between my-8 md:my-0;
+
+      h3 {
+        @apply text-lg md:text-3xl font-sans mb-2;
+      }
+
+      p {
+        @apply text-sm md:text-base;
+      }
+
+      .fee-card__image {
+        @apply bg-contain bg-center bg-no-repeat w-full h-24;
+
+        @screen md {
+          @apply h-36;
+        }
+      }
+    }
+  }
+}

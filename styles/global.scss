@@ -1,0 +1,17 @@
+*,
+*:before,
+*:after {
+  @apply box-border;
+}
+
+body {
+  @apply p-0 m-0 text-black;
+}
+
+a {
+  @apply no-underline text-main;
+
+  &:hover {
+    @apply underline;
+  }
+}

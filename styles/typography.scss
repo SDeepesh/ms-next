@@ -1,0 +1,53 @@
+h1 {
+  @apply font-serif text-3xl font-normal;
+
+  @screen md {
+    @apply text-6xl;
+  }
+}
+
+h2 {
+  @apply font-sans text-2xl font-semibold mt-10;
+
+  @screen md {
+    @apply text-5xl;
+  }
+}
+
+h3 {
+  @apply font-serif text-xl font-bold mt-8;
+
+  @screen md {
+    @apply text-4xl;
+  }
+}
+
+h4 {
+  @apply font-serif text-xl font-semibold mt-6;
+
+  @screen md {
+    @apply text-4xl;
+  }
+}
+
+h5 {
+  @apply font-serif text-lg font-semibold mt-4;
+
+  @screen md {
+    @apply text-3xl;
+  }
+}
+
+h6, .footer__upper__guides__title {
+  @apply font-sans text-lg font-bold mt-2;
+
+  @screen md {
+    @apply text-2xl;
+  }
+}
+
+a,
+p,
+li {
+  @apply font-sans text-lg break-words;
+}

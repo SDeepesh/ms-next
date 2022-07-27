@@ -1,0 +1,9 @@
+.section__text {
+  @screen md {
+    @apply my-24;
+  }
+
+  p:last-child {
+    @apply mb-0;
+  }
+}

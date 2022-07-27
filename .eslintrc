@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "extends": ["react-app", "airbnb", "prettier", "plugin:cypress/recommended"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "max-len": ["error", { "code": 120 }],
+    "prefer-promise-reject-errors": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "no-return-assign": ["off"],
+    "react/jsx-key": ["error"],
+    "react/jsx-curly-newline": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/jsx-indent": ["off"],
+    "react/prop-types": ["off"],
+    "linebreak-style": ["error", "unix"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_|children", "ignoreRestSiblings": true }
+    ],
+    "cypress/no-unnecessary-waiting": ["warn"]
+  }
+}

@@ -1,0 +1,7 @@
+.mobile-sticky-cta {
+  @apply sticky md:relative bottom-4 md:bottom-0 text-center;
+
+  .mobile-sticky-cta__link {
+    @apply text-white no-underline;
+  }
+}

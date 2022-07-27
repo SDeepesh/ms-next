@@ -1,0 +1,15 @@
+.topic-menu {
+  @apply w-full h-screen absolute z-30 bg-gray;
+
+  a {
+    @apply no-underline text-white;
+  }
+
+  ul {
+    @apply p-0;
+  }
+
+  .topic-menu__main-topic {
+    @apply text-center;
+  }
+}

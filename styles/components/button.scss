@@ -1,0 +1,23 @@
+.button {
+  @apply text-lg cursor-pointer bg-main px-6 py-3 uppercase text-white rounded-md border-0 outline-none font-sans font-semibold tracking-wide;
+
+  &:disabled {
+    @apply bg-gray-light cursor-not-allowed;
+  }
+
+  &:hover {
+    @apply shadow-lg;
+  }
+}
+
+.button--pill {
+  @apply rounded-full;
+}
+
+.button--ghost {
+  @apply bg-transparent border border-main border-solid px-6 py-3 rounded-md text-gray capitalize font-normal;
+
+  &:hover {
+    @apply bg-main text-white;
+  }
+}

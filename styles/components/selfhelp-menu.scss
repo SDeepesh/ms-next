@@ -1,0 +1,27 @@
+.selfhelp-menu {
+  @apply bg-gray z-30 absolute w-full font-sans py-12;
+
+  @screen md {
+    @apply mt-[92px];
+  }
+
+  .selfhelp-menu__container {
+    @apply flex flex-col w-full justify-center mx-auto;
+
+    @screen md {
+      @apply flex-wrap flex-row w-3/4;
+    }
+
+    a {
+      @apply text-white no-underline;
+    }
+
+    .selfhelp-menu__topic-container {
+      @apply flex w-1/4 flex-col mb-12;
+
+      a {
+        @apply my-1;
+      }
+    }
+  }
+}

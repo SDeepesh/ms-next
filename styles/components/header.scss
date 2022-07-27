@@ -1,0 +1,80 @@
+.header {
+  @apply shadow h-[92px] font-sans hidden sticky top-0 z-50 bg-white;
+
+  @screen lg {
+    @apply block;
+  }
+
+  .header__container {
+    @apply w-full px-4 mx-auto flex justify-between items-center;
+
+    a {
+      @apply no-underline;
+    }
+
+    @screen md {
+      @apply w-auto max-w-[90%] px-0;
+    }
+
+    .header__ms__wrapper {
+      @apply flex flex-row items-center;
+    }
+
+    .header__phone__wrapper {
+      @apply flex flex-row items-center text-black cursor-pointer ml-8;
+
+      span {
+        @apply ml-1;
+      }
+    }
+
+    .header__phone {
+      background-image: url('/images/phone-icon.png');
+
+      @apply w-4 h-4 bg-contain bg-no-repeat;
+    }
+
+    .header__logo {
+      background-image: url('/images/ms-logo.png');
+      @apply w-36 h-16 bg-center bg-contain bg-no-repeat;
+    }
+
+    .header__nav {
+      @apply hidden;
+
+      @screen md {
+        @apply flex;
+      }
+
+      ul {
+        @apply flex space-x-4 list-none pl-0 items-center;
+
+        li {
+          a {
+            @apply no-underline text-black text-lg break-words;
+          }
+        }
+      }
+    }
+
+    p {
+      @apply cursor-pointer;
+    }
+
+    .header__contact {
+      @apply hidden;
+
+      @screen md {
+        @apply flex flex-row items-center;
+
+        svg {
+          @apply ml-8;
+        }
+      }
+
+      a {
+        @apply flex space-x-2 items-center;
+      }
+    }
+  }
+}

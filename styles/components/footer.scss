@@ -1,0 +1,101 @@
+.footer {
+  @apply bg-gray py-12 text-gray-lighter font-sans;
+
+  h6, .footer__upper__guides__title {
+    @apply text-sm text-gray-light;
+  }
+
+  ul {
+    @apply p-0;
+
+    li {
+      @apply list-none my-2;
+    }
+  }
+
+  .footer__container {
+    @apply container;
+    a {
+      @apply no-underline text-white;
+    }
+
+    .footer__logo {
+      background-image: url('/images/ms-logo.png');
+      @apply w-36 h-16 bg-center bg-contain bg-no-repeat;
+    }
+
+    .footer__upper {
+      @apply flex justify-between flex-col;
+
+      @screen md {
+        @apply flex-row;
+      }
+
+      h6, .footer__upper__guides__title {
+        @apply my-2;
+      }
+
+      .footer__upper__guides,
+      .footer__upper__resources {
+        @apply flex-col;
+
+        @screen md {
+          @apply flex-col h-[18rem];
+        }
+
+        ul {
+          @apply flex flex-col h-full;
+        }
+      }
+
+      .footer__upper__guides {
+        @apply w-2/6;
+
+        ul {
+          @apply flex-wrap;
+        }
+      }
+
+      .footer__upper__last-row {
+        @apply flex flex-col;
+
+        @screen md {
+          @apply w-2/6;
+        }
+      }
+
+      .footer__upper__company {
+        @apply flex flex-col  h-[11rem];
+
+        ul {
+          @apply flex flex-wrap flex-col h-full;
+        }
+      }
+
+      .footer__upper__socials {
+        @apply mt-16 w-[70%];
+
+        .footer__socials__links {
+          @apply flex justify-between items-center mt-4;
+        }
+      }
+    }
+
+    .footer__lower {
+      @apply flex flex-col mt-32;
+
+      .footer__lower__legal-advice {
+        @screen md {
+          @apply w-4/5;
+        }
+      }
+
+      .footer__lower__copyright {
+        @apply mt-4;
+        p {
+          @apply text-[10px];
+        }
+      }
+    }
+  }
+}

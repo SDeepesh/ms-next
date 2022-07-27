@@ -1,0 +1,41 @@
+.template {
+  .template__download__container {
+    @apply flex flex-col bg-gray-lighter p-4;
+
+    @screen md {
+      @apply p-24;
+    }
+
+    .template__download__form {
+      @apply flex justify-between flex-col items-center;
+
+      @screen md {
+        @apply flex-row;
+      }
+
+      a {
+        @apply h-12 self-center mt-8;
+
+        @screen md {
+          @apply self-end;
+        }
+      }
+
+      .template__download__details {
+        @apply flex flex-col;
+
+        input {
+          @apply w-56 h-8 rounded-md border-none;
+        }
+      }
+    }
+  }
+
+  .template__letter {
+    @apply my-12 p-4 shadow-xl;
+
+    @screen md {
+      @apply p-24;
+    }
+  }
+}

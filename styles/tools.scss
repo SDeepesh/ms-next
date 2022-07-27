@@ -1,0 +1,14 @@
+.tools {
+  @apply container font-sans;
+
+  .tools__list {
+    @apply my-24;
+    .tools__link {
+      @apply flex flex-col;
+
+      a {
+        @apply bg-main h-16 flex justify-between items-center px-12 text-white font-semibold no-underline;
+      }
+    }
+  }
+}

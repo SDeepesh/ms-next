@@ -1,0 +1,21 @@
+.page-layout--has-sidebar {
+  @apply flex flex-wrap;
+
+  .page,
+  .article,
+  .template {
+    @apply w-full;
+
+    @screen md {
+      @apply w-8/12;
+    }
+  }
+
+  .sidebar {
+    @apply w-full;
+
+    @screen md {
+      @apply pl-8 w-4/12;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.fees {
+  .fees__our-prices {
+    @apply container my-20;
+
+    h2 {
+      @apply text-center md:mb-20;
+    }
+
+    a {
+      @apply text-main no-underline;
+    }
+
+    .fees__communicate__wrapper {
+
+      p {
+        @apply text-sm md:text-lg;
+      }
+
+      > p {
+        @apply text-center;
+      }
+
+    }
+
+    .fees__communicate__child {
+      @apply my-16 flex;
+
+      .fees__communicate__child__inner-left {
+        @apply mr-4 md:mr-10;
+
+        .fees__communicate__child__inner_img {
+          @apply w-24	md:w-36;
+        }
+      }
+      .fees__communicate__child__inner-right {
+
+        h3 {
+          @apply mt-0 text-lg md:text-[28px] font-sans mb-4;
+        }
+      }
+    }
+  }
+
+  .fees__top-banner {
+    @apply container text-center;
+
+    h1 {
+      @apply mt-20 mb-12 md:mt-24;
+    }
+
+    .fees__top-banner__image {
+
+      @apply w-full h-48 bg-contain bg-no-repeat bg-center my-10 md:my-20;
+
+      @screen md {
+        @apply h-[24rem];
+      }
+    }
+  }
+
+  .fees__cdf {
+    @apply container;
+
+    .fees__cdf__award {
+      background-image: url('/images/aword.png');
+
+      @apply w-full h-48 bg-contain bg-no-repeat bg-center mt-12;
+
+      @screen md {
+        @apply h-[20rem];
+      }
+    }
+
+    .fees__cdf__intro {
+      @apply text-center;
+    }
+  }
+}

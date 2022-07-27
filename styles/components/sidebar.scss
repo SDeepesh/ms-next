@@ -1,0 +1,117 @@
+.toc {
+  @screen md {
+    @apply hidden;
+  }
+}
+
+.sidebar {
+  @apply flex flex-col mt-8;
+
+  .toc {
+    @apply mb-8 hidden;
+
+    @screen md {
+      @apply block;
+    }
+  }
+
+  .toc,
+  .sidebar__top-pages {
+    ul {
+      @apply list-none pl-0 mb-0;
+    }
+  }
+
+  .sidebar__top-pages {
+    @apply bg-gray-lighter border-[#DDDDDD] border-solid rounded p-2;
+
+    ul {
+      li {
+        a {
+          @apply mb-4 flex justify-start text-black no-underline;
+
+          img {
+            @apply w-16 mr-4;
+          }
+        }
+
+        &:last-child {
+          a {
+            @apply mb-0;
+          }
+        }
+      }
+    }
+
+    .sidebar__top-pages__title {
+      @apply block text-lg font-sans font-semibold flex justify-between items-center text-black;
+    }
+  }
+
+  .sidebar__calculator {
+    @apply bg-gray-lighter border-[#DDDDDD] border-solid rounded p-2 mt-12;
+
+    .calculator,
+    .calculator__result__wrapper {
+      h3 {
+        @apply block text-lg font-sans font-semibold flex justify-between items-center text-black m-0;
+      }
+    }
+
+    .calculator {
+      @apply p-2;
+
+      .calculator__first-step {
+        @apply mb-4;
+
+        .calculator__first-step__field {
+          @apply w-full mb-4 px-0;
+
+          @screen lg {
+            @apply w-1/2;
+
+            &:nth-child(even) {
+              @apply pl-2;
+            }
+
+            &:nth-child(odd) {
+              @apply pr-2;
+            }
+          }
+
+          p {
+            @apply text-sm mb-1;
+          }
+        }
+      }
+
+      .calculator__second-step {
+        @apply w-full;
+
+        p {
+          @apply text-sm mb-1;
+        }
+
+        .calculator__second-step__field {
+          @apply w-full mb-4 px-0;
+
+          @screen xl {
+            @apply w-1/2;
+
+            &:nth-child(even) {
+              @apply pl-2;
+            }
+
+            &:nth-child(odd) {
+              @apply pr-2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calculator__result__wrapper {
+    @apply p-4;
+  }
+}

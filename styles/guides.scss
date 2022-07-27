@@ -1,0 +1,27 @@
+.guides {
+  @apply container font-sans;
+
+  h2 {
+    @apply mt-36;
+  }
+
+  .guides__main-cases {
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    @apply bg-main h-16 flex justify-between items-center px-12;
+
+    a {
+      @apply text-white font-semibold;
+    }
+  }
+
+  .guides__specific-cases {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    @apply border-main  h-16 flex justify-between items-center px-12;
+
+    a {
+      @apply text-black font-semibold;
+    }
+  }
+}

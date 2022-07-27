@@ -1,0 +1,49 @@
+.reviews__container {
+  @apply flex flex-col justify-center items-center py-16 text-center bg-gray-lighter container;
+
+  .reviews-io {
+    @apply w-[90%];
+  }
+
+  .reviews__stars {
+    background-image: url('/images/stars.png');
+    @apply w-full h-20 bg-contain bg-no-repeat bg-center;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+
+.reviews--transparent {
+  @apply bg-transparent text-white font-serif pt-4;
+
+  .reviews-io {
+    @apply w-full;
+  }
+
+  h3 {
+    @apply text-sm mt-2 mb-2;
+
+    @screen md {
+      @apply text-3xl my-8;
+    }
+  }
+
+  p {
+    @apply text-2xl mt-0;
+  }
+
+  a {
+    @apply text-sm;
+  }
+
+  .reviews__stars {
+    background-image: url('/images/stars.png');
+    @apply w-full h-10 bg-contain bg-no-repeat bg-center;
+
+    @screen md {
+      @apply h-20;
+    }
+  }
+}

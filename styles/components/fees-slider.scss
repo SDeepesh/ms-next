@@ -1,0 +1,19 @@
+.fees-slider__container {
+  @apply flex w-full h-[28rem] my-8;
+
+  @screen md {
+    @apply hidden;
+  }
+
+  .fees-slider__card {
+    @apply p-4 w-3/4 mx-auto flex flex-col items-center justify-center h-[24rem] rounded-xl text-center shadow-xl bg-gray-lighter;
+
+    @screen md {
+      @apply w-2/4 h-64;
+    }
+
+    .fees-slider__card__image {
+      @apply h-28 w-28 bg-no-repeat bg-contain bg-center;
+    }
+  }
+}

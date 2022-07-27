@@ -1,0 +1,37 @@
+.cta-banner {
+  background-image: url('/images/generic-pages-banner-overlay.webp');
+  @apply bg-center bg-cover w-full h-[28rem];
+
+  @screen md {
+    @apply h-[32rem];
+  }
+
+  .reviews-io {
+    @apply mt-8;
+
+    @screen md {
+      @apply h-[14rem];
+    }
+
+    .CarouselWidget__header,
+    .R-ReviewsioLogo__image {
+      display: none !important;
+    }
+
+    .R-ReviewsList {
+      @apply h-[14rem];
+
+      @screen md {
+        @apply h-[12rem];
+      }
+
+      .R-ReviewsList__item {
+        @apply text-[0.75rem];
+
+        @screen md {
+          @apply text-xs;
+        }
+      }
+    }
+  }
+}

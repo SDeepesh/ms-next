@@ -1,0 +1,31 @@
+.toc {
+  @apply py-4 border-gray-light border-0 border-y border-solid mb-12;
+
+  @screen md {
+    @apply mb-24;
+  }
+
+  ul {
+    @apply py-4 list-none pl-0;
+
+    li {
+      @apply mb-4;
+
+      &:last-child {
+        @apply mb-0;
+      }
+
+      button {
+        @apply no-underline border-0 text-left p-0 text-base font-semibold text-gray-custom cursor-pointer bg-transparent font-sans;
+
+        &:hover {
+          @apply text-black;
+        }
+      }
+    }
+  }
+
+  .toc__title {
+    @apply flex justify-between w-full items-center bg-transparent border-0 block text-xl font-sans font-semibold text-gray;
+  }
+}

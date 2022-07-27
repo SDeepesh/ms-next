@@ -1,0 +1,71 @@
+.header-mobile {
+  @apply shadow-md sticky top-0 z-50 bg-white;
+
+  a {
+    @apply text-white no-underline;
+  }
+
+  @screen lg {
+    @apply hidden;
+  }
+
+  .header-mobile__logo {
+    background-image: url('/images/ms-logo.png');
+    @apply w-28 h-12 bg-center bg-contain bg-no-repeat;
+  }
+
+  .header-mobile__wrapper {
+    @apply flex px-6 flex-row justify-between;
+
+    .header-mobile__right {
+      @apply flex items-center w-14 justify-between;
+    }
+
+    .header-mobile_right__phone {
+      background-image: url('/images/phone-icon.png');
+
+      @apply w-4 h-4 bg-contain bg-no-repeat;
+    }
+  }
+
+  .header-mobile__navigation {
+    @apply absolute bg-gray w-full font-sans p-4 z-30 text-white pb-24 overflow-y-auto h-[100vh];
+
+    .header-mobile__navigation__bottom {
+      border-top: solid;
+      @apply border-t border-gray-lighter mt-8 mb-12;
+
+      .header-mobile__navigation__about-us {
+        @apply flex justify-between items-center;
+      }
+
+      .header-mobile__navigation__us {
+        @apply flex flex-col;
+      }
+
+      ul {
+        @apply mt-8;
+      }
+    }
+
+    .header-mobile__navigaton__controls {
+      @apply flex justify-end;
+
+      .header-mobile__navigation__close {
+        @apply text-right;
+      }
+    }
+
+    ul {
+      @apply list-none;
+    }
+  }
+}
+
+.header-mobile--menu-open {
+  .header-mobile__navigation {
+    .header-mobile__navigaton__controls {
+      @apply flex justify-between;
+    }
+  }
+}

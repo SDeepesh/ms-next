@@ -1,0 +1,23 @@
+.about-menu {
+  @apply bg-gray z-30 absolute w-full font-sans py-12;
+
+  @screen md {
+    @apply mt-[92px];
+  }
+
+  .about-menu__container {
+    @apply flex flex-wrap w-3/4 justify-center mx-auto;
+
+    a {
+      @apply text-white no-underline;
+    }
+
+    .about-menu__topic-container {
+      @apply flex w-1/4 flex-col mb-12;
+
+      a {
+        @apply my-1;
+      }
+    }
+  }
+}

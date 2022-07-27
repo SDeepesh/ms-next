@@ -1,0 +1,167 @@
+.cdf {
+  @apply bg-gray-lighter p-12 rounded-xl my-12 font-sans;
+
+  @screen md {
+    @apply my-36;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  h3 {
+    @apply font-sans;
+  }
+
+  small {
+    @apply text-center mt-8;
+  }
+
+  @screen lg {
+    @apply p-20;
+  }
+
+  span {
+    @apply text-red-500;
+  }
+
+  .cdf__form {
+    @apply flex flex-col justify-center;
+
+    button {
+      @apply w-44 text-center mx-auto mt-8;
+    }
+
+    p {
+      @apply font-semibold text-sm;
+    }
+
+    .cdf__form__call-taken-by {
+      @apply w-full text-center my-12;
+
+      select {
+        @apply w-40 h-12 rounded-md border-gray px-4;
+      }
+    }
+
+    .cdf__form__first-step {
+      @apply flex flex-col;
+
+      @screen md {
+        @apply mx-auto;
+      }
+
+      @screen lg {
+        @apply mx-0;
+      }
+
+      h3 {
+        @apply mt-0;
+      }
+
+      .cdf__first-step__fields {
+        @apply flex flex-col justify-between;
+
+        @screen md {
+          @apply flex-wrap flex-wrap flex-row;
+        }
+
+        @screen lg {
+          @apply flex-row;
+        }
+
+        .cdf__field__wrapper {
+          @apply flex flex-col mb-4;
+
+          @screen md {
+            @apply w-[45%] mb-0;
+          }
+
+          @screen lg {
+            @apply w-1/4 mb-0;
+          }
+
+          input {
+            @apply h-10 rounded-md border-gray;
+
+            @screen lg {
+              @apply w-[90%];
+            }
+          }
+        }
+      }
+    }
+
+    .cdf__form__second-step {
+      @apply flex flex-col mt-8;
+
+      @screen md {
+        @apply mx-auto;
+      }
+
+      @screen md {
+        @apply mx-0;
+      }
+
+      @screen lg {
+        @apply mx-0;
+      }
+
+      .cdf__second-step__fields {
+        @apply flex  flex-col;
+
+        .cdf__second-step__select {
+          @apply flex flex-row justify-between mb-24 items-center flex-col;
+
+          @screen md {
+            @apply flex-wrap flex-row mx-0;
+          }
+
+          @screen lg {
+            @apply flex-row;
+          }
+
+          .cdf__select-field__wrapper {
+            @apply flex flex-col justify-between w-full mb-6;
+
+            @screen md {
+              @apply w-[45%] mb-0;
+            }
+
+            @screen lg {
+              @apply w-1/4;
+            }
+
+            p {
+              @apply h-auto;
+
+              @screen md {
+                @apply h-12;
+              }
+            }
+
+            select {
+              @apply w-full h-10 rounded-md border-gray;
+
+              @screen lg {
+                @apply w-[90%];
+              }
+            }
+          }
+        }
+      }
+
+      .cdf__form__third-step {
+        @apply w-full;
+
+        textarea {
+          @apply w-full;
+        }
+      }
+    }
+  }
+}
+
+.cdf__field__error {
+  @apply text-red-500 mt-2;
+}

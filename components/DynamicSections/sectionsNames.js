@@ -1,0 +1,13 @@
+const sectionsNames = {
+  VIDEO: 'VIDEO',
+  TEXT: 'TEXT',
+  IMAGE: 'IMAGE',
+  QUOTE: 'QUOTE',
+  CALL_TO_ACTION_FULLWIDTH: 'CALL_TO_ACTION_FULLWIDTH',
+  TOP_THREE_TIPS: 'TOP_THREE_TIPS',
+  HELPFUL_GUIDES: 'HELPFUL_GUIDES',
+  CDF: 'CDF',
+  CALCULATOR: 'CALCULATOR',
+};
+
+export default sectionsNames;
