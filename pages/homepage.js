@@ -67,7 +67,7 @@ const Homepage = ({ desktopHeaderData }) => {
           <div className="homepage__tools__container">
             <h2>Not ready to get a lawyer just yet</h2>
             <p>Try our award winning Virtual Lawyer tool to write a legal letter to your <span>employer in order to negotiate a fair settlement agreement</span></p>
-            <div class="homepage__tools__img" data-bg="/images/vl-award-blue.png"/>
+            <div className="homepage__tools__img" data-bg="/images/vl-award-blue.png"/>
             <p className="homepage__tools__virtual-link">
               Try{' '}
               <a href="https://virtuallawyer.monacosolicitors.co.uk" target="_blank">
