@@ -28,7 +28,7 @@ const Header = ({ menuData }) => {
             <div className="header__logo" />
           </a>
           <a className="header__phone__wrapper" href="tel: 020 7717 5259">
-            <div class="header__phone" />
+            <div className="header__phone" />
             <span>020 7717 5259</span>
           </a>
         </div>

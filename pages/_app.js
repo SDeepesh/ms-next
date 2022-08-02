@@ -1,3 +1,4 @@
+import './../faust.config';
 import '../styles/index.scss';
 import 'swiper/css';
 import 'swiper/scss/navigation';
